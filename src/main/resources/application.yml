@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: productservice
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: ""
+    password: ""
+    driver-class-name: org.postgresql.Driver
+  cache:
+    cache-names: currencyExchangeRate
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+server:
+  port: 8081
+
+api:
+  url: https://api.hnb.hr/tecajn-eur/v3?valuta=USD
